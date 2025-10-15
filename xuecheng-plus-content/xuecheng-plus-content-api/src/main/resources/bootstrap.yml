@@ -14,3 +14,21 @@ spring:
 # 日志文件配置路径
 logging:
   config: classpath:log4j2-dev.xml
+
+# ======================================================
+# springdoc-openapi (Swagger) 的推荐配置
+# ======================================================
+springdoc:
+  # API 文档的基础信息配置
+  info:
+    title: "内容管理服务 API 文档"
+    description: "本文档提供了内容管理服务的所有接口定义，包括课程的增删改查等。"
+    version: "v1.0.0"
+  # 自定义 Swagger UI 的访问路径 (可选, 默认就是 /swagger-ui.html)
+  swagger-ui:
+    path: /swagger-ui.html
+  # 自定义 API 描述文件 (JSON) 的访问路径 (可选, 默认就是 /v3/api-docs)
+  api-docs:
+    path: /v3/api-docs
+  # (可选配置) 如果你的 Controller 不在主程序同级或子级包下，或者想指定扫描范围，可以配置这个
+  packages-to-scan: com.xuecheng.content.api
