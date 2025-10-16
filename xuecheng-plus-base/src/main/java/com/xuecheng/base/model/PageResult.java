@@ -20,7 +20,7 @@ public class PageResult<T> implements Serializable {
 
     private List<T> items;
 
-    private long count;
+    private long counts;
 
     private long page;
 
